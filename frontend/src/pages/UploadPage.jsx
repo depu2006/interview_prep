@@ -64,7 +64,7 @@ const UploadPage = ({ onParseComplete }) => {
       const formData = new FormData()
       formData.append('file', file)
 
-      const response = await axios.post('/api/parse', formData, {
+      const response = await axios.post('https://interview-prep-vepv.onrender.com/api/parse', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         timeout: 60000,
       })
